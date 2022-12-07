@@ -1,0 +1,5 @@
+{
+    "command": "PlayersInfos",
+    "infos": "[Player.getCleaned(), ...]",
+    "maxPlayers": "this.maxPlayers"
+}

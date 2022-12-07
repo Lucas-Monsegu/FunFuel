@@ -1,0 +1,4 @@
+[submodule "src/base"]
+	path = src/base
+	url = git@gitlab.com:funfuel/game-backend-base
+    branch = dev

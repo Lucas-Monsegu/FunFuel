@@ -1,0 +1,37 @@
+image: node:latest
+
+cache:
+    paths:
+        - node_modules/
+
+stages:
+    - build
+    - test
+    - deploy
+
+build:
+    stage: build
+    script:
+        - yarn
+    only:
+        - master
+
+test:
+    stage: test
+    script:
+        - exit 0
+    only:
+        - master
+
+deploy:
+    stage: deploy
+    before_script:
+        - eval $(ssh-agent -s)
+        - echo $TARGET_SERVER_SECRET_KEY_BASE64 | base64 -d | ssh-add -
+        - yarn global add pm2
+    script:
+        - pm2 deploy ecosystem.config.js production
+    environment:
+        name: deploying
+    only:
+        - master

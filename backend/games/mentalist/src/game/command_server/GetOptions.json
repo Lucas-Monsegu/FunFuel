@@ -1,0 +1,8 @@
+{
+    "msPerTurn": "number",
+    "msPerVote": "number",
+    "default": "boolean",
+    "doubleagents": "number",
+    "mentalist": "number",
+    "language": "language"
+}

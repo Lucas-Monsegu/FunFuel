@@ -1,0 +1,6 @@
+{
+    "command": "TeamInfo",
+    "names": "this.teamsNames",
+    "players": "this.teams",
+    "randomized": "boolean"
+}

@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "service-template",
+      "script": "yarn",
+      "args" : "prod",
+      "interpreter": "bash"
+    }
+  ]
+}

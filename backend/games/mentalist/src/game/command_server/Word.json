@@ -1,0 +1,5 @@
+{
+    "player": "string",
+    "word": "string",
+    "history": "string[]"
+}

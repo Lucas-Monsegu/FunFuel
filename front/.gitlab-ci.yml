@@ -1,0 +1,24 @@
+image: node:latest
+
+# Cache modules in between jobs
+cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+    - node_modules/
+
+stages:
+    - "Build & Deploy"
+
+Build & Deploy:
+    stage: "Build & Deploy"
+    before_script:
+        - yarn
+        - yarn build
+        - eval $(ssh-agent -s)
+        - echo $TARGET_SERVER_SECRET_KEY_BASE64 | base64 -d | ssh-add -
+    script:
+        - scp -o StrictHostKeyChecking=no -P 8104 -r dist/* $TARGET_SERVER_USER@$TARGET_SERVER_HOST:/home/gitlab/front
+    environment:
+        name: Production
+    only:
+        - master

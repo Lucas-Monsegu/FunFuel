@@ -1,0 +1,6 @@
+{
+    "command": "Connected",
+    "sessionId": "sessionId",
+    "publicId": "player.id",
+    "roomName": "this.name"
+}
