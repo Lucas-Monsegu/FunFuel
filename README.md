@@ -6,7 +6,13 @@ The website is no longer hosted
 
 # Trailer
 
-https://www.youtube.com/watch?v=sQbmNIm49LQ
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="/ressources/videos/FunFuel_trailer.mp4">
+    <source src="path/to/video.mp4" type="video/mp4">
+    <source src="path/to/video.ogg" type="video/ogg">
+    <source src="path/to/video.webm" type="video/webm">
+  </video>
+</figure>
 
 # Technos
 
