@@ -6,19 +6,17 @@ The website is no longer hosted
 
 # Trailer
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="/ressources/videos/FunFuel_trailer.mp4">
-    <source src="path/to/video.mp4" type="video/mp4">
-    <source src="path/to/video.ogg" type="video/ogg">
-    <source src="path/to/video.webm" type="video/webm">
-  </video>
-</figure>
+A video trailer can be found [here](https://www.youtube.com/watch?v=sQbmNIm49LQ)
+
+# Screenshots
+
+![screen shot game room](ressources/images/funfuel.webp)
 
 # Technos
 
 Front: VueJs Vuex Vuetify 
 
-Back: Typescript Express.js websockets Postgresql AmazonS3
+Back: Typescript Express.js websockets Postgresql AmazonS3 Prometheus Grafana
 
 Architecture: Microservices
 
